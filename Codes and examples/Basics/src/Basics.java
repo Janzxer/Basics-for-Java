@@ -1,5 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
 public class Basics {
     public static void main(String[] args) throws Exception {   //Start of main
         
@@ -84,6 +86,101 @@ public class Basics {
         //  number = Double.parseDouble(input);
 
         //  System.out.println(number + 4.5);
+
+
+
+        //  *************************
+        //          ARRAYS
+        //  *************************
+        //  To use Arrays.sort(); you need to import java.util.Arrays;
+
+        //  Arrays is good to use when you know how many values there will be, like if there will be  5, 10, 15 etc. 
+        
+        //  int[] points;
+        //  points = new int[5];
+
+        //  points[0] = 5;
+        //  points[1] = 10;
+        //  points[2] = 3;
+        //  points[3] = 2;
+        //  points[4] = 0;
+
+        //  Arrays.sort(points);
+        //  for (int i = 0 ; i < points.length ; i++)
+        //      {
+        //          System.out.println(points[i]);
+        //      }
+            
+        //  System.out.println(Arrays.stream(points).sum());        //With this you can sum the arrays integer values.
+
+
+        //  *************************
+        //          ARRAYLIST
+        //  *************************
+
+        //  You need to import java.util.ArrayList; to use arraylists.
+
+
+        //  ArrayList<String> names = new ArrayList<String>();
+
+        //  // Heres how you add to the list.
+        //  names.add("Mike");
+        //  names.add("Pia");
+        //  names.add("Katja");
+
+        //  System.out.println(names.get(0));       // This will print "Mike"
+
+        //  for (int i = 0 ; i < names.size() ; i++)
+        //      {
+        //          System.out.println(names.get(i));
+        //      }
+            
+        //  Heres how you can remove from the list.
+        //  names.remove(1);        // This will remove "Pia" from the list.
+
+
+        //  Example with a guessing game.
+            
+        //  Scanner in = new Scanner(System.in);
+
+        //  int rightNumber = 3;
+        //  String input;
+
+        //  ArrayList<Integer> guesses = new ArrayList<Integer>();
+
+        //  do
+        //  {
+        //      System.out.println("Guess the right number between 1-5");
+        //      System.out.println("Type 0, if you want to quit");
+        //      input = in.nextLine();
+
+        //      if (Integer.parseInt(input) != 0)       // This way when user types 0, it won't be counted as a guess.
+        //         {
+        //             guesses.add(Integer.parseInt(input));
+        //         }
+
+        //      if (Integer.parseInt(input) == rightNumber)
+        //         {
+        //             System.out.println("You guessed right!");
+        //             break;
+        //         }
+
+        //  } while (Integer.parseInt(input) != 0);     // This loops until user inputs 0 as an aswer. The break is applied within the loop if the user submits a correct answer.
+
+        //  System.out.println("Your guesses");
+        //  for (int i = 0 ; i < guesses.size() ; i++)
+        //      {
+        //         System.out.println(guesses.get(i));
+        //      }
+
+
+
+        //  Otherway to not "count" the 0
+
+        //  if (Integer.parseInt(input) == 0)
+        //      {
+        //         guesses.remove(guesses.size() -1);
+        //      }
 
     } // End of main
 }
