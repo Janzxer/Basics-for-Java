@@ -208,5 +208,71 @@ public class Basics {
         //      } while (numberOK == false);
 
         //  System.out.println("You wrote " + number);
-    } // End of main
+    }   // End of main
+
+    
+
+
+
+        //  *************************
+        //          METHODS
+        //  *************************
+        //  Methods are made outside of the main, and called within the main for example "fireNail;" will print out "Nail fired"
+        //  Next 2 methods do not return a value, thats why there is "public static VOID".
+        //     public static void fireNail() 
+        //     {
+        //         System.out.println("Nail fired");
+        //     }
+
+
+
+        //     //********************************
+        //     //          Do this in main
+        //     //********************************
+        //     //  Scanner in = new Scanner(System.in);
+        //     //  String inputCupSize;
+        //     //  String inputStrength;
+        //     //
+        //     // System.out.println("Cup size?")
+        //     // inputCupSize = in.nextLine();
+
+        //     // System.out.println("Strength?")
+        //     // inputStrength = in.nextLine();
+
+        //     // makeCoffee(inputCupSize, inputStrength);
+        //     //********************************
+        //     public static void makeCoffee(String cupSize, String strength)
+        //     {
+        //         System.out.println("Here you have a coffee that is:");
+        //         System.out.println("Cup size: " + cupSize);
+        //         System.out.println("Strength: " + strength);
+        //     }
+
+        //     // This method will return a integer value. If it were to return a String, you would replace the "int" with "string"
+        //     public static int generateRandomNumber()
+        //     {
+        //         Random random = new Random();
+        //         int randomNumber = random.nextInt(5);
+        //         return randomNumber;
+        //         //return 0;   //At the start you can input "return 0;" so it doesn't give you a warning, later it will be deleted.
+        //     }
+        //     //********************************
+        //     //          Do this in main
+        //     //********************************
+        //     // System.out.println("Random number is " + generateRandomNumber());
+        //     //********************************
+
+            
+        //     // This method will need values, and will return a value.
+        //     //********************************
+        //     //          Do this in main
+        //     //********************************
+        //     // System.out.println(calculateArea(5,2));
+        //     //********************************
+        //     public static int calculateArea(int width, int length)
+        //     {
+        //         int area = width * length;
+        //         return area;
+        //     }
+
 }
