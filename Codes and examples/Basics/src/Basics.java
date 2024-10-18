@@ -182,5 +182,31 @@ public class Basics {
         //         guesses.remove(guesses.size() -1);
         //      }
 
+
+
+
+        //  *************************
+        //       ERROR HANDLING
+        //  *************************
+
+        // Scanner in = new Scanner(System.in);
+
+        //  int number = 0;
+        //  boolean numberOK = false;
+        //  do  {
+        //     System.out.println("Please give me a number");
+        //         try
+        //             {
+        //             number = Integer.parseInt(in.nextLine());        number = Integer.parseInt(in.nextLine()); May cause an error, thats why it's in the "try" section.
+        //             numberOK = true;                                 Exits the loop if an integer is provided.
+        //             }
+        //             catch (Exception e) 
+        //                 {
+        //                 System.out.println("Error - you dind' write a number");
+        //                 numberOK = false;                            Continues the loop if the given value isn't an integer.
+        //                 }
+        //      } while (numberOK == false);
+
+        //  System.out.println("You wrote " + number);
     } // End of main
 }
