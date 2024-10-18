@@ -189,7 +189,7 @@ public class Basics {
         //       ERROR HANDLING
         //  *************************
 
-        // Scanner in = new Scanner(System.in);
+        //  Scanner in = new Scanner(System.in);
 
         //  int number = 0;
         //  boolean numberOK = false;
@@ -211,63 +211,69 @@ public class Basics {
 
 
 
+        //  *************************
+        //    EXAMPLES START HERE
+        //  *************************
+
+
 
         //  *************************
         //          LOOPS
         //  *************************
 
 
-        // This loops example is about how to print stars, by addind 1 more for each row. 
-        // Scanner in = new Scanner(System.in);
+        //  This loops example is about how to print stars, by addind 1 more for each row. 
+        //  Scanner in = new Scanner(System.in);
 
-        // System.out.println("How many rows?");
-        // int rows = in.nextInt();
+        //  System.out.println("How many rows?");
+        //  int rows = in.nextInt();
 
-        // for (int i = 1; i <= rows; i++)                             //How many rows are printed
+        //  for (int i = 1; i <= rows; i++)                             //How many rows are printed
         //     {   
         //                                                                  //for (int space = 1; space <= (rows - i); space++)   //How many spaces there are before printing a * and removing a space each row printed 
         //                                                                  //{
-        //   When these 4 lines are added the stars will be reversed        //System.out.print(" ");
+        //  When these 4 lines are added the stars will be reversed        //System.out.print(" ");
         //                                                                  //}
         //         for (int stars = 1; stars <= i; stars++)            //How many stars are printed, and added for each row
         //         {
         //         System.out.print("*");                              //Using just print so there is no line change
         //         }                        
         //         System.out.println();                               //Doing a line change after desired amount of stars are printed.
-        //     }
+        //         }
         
         
 
 
-        // This example is for guessing a name
-        // Scanner in = new Scanner(System.in);
-        // String name = "";
-        // String correct = "Pekka";
-        // int guess = 0;
-        // System.out.println("Guess my name (type stop to exit)");
+        //  This example is for guessing a name
+
+        //  Scanner in = new Scanner(System.in);
+        //  String name = "";
+        //  String correct = "Pekka";
+        //  int guess = 0;
+        //  System.out.println("Guess my name (type stop to exit)");
             
-        // while(true)
-        // {
+        //  while(true)
+        //  {
         //     name = in.nextLine();
         //     guess++;
         
-        // if (name.equalsIgnoreCase(correct))
+        //  if (name.equalsIgnoreCase(correct))
         //         {
         //         System.out.println("Congratulations!");
         //         System.out.println("You guessed " + guess + " times.");
         //         break;
         //         }
-        // else if (name.equalsIgnoreCase("stop"))    
+        //  else if (name.equalsIgnoreCase("stop"))    
         //         {
         //         guess--;
         //         System.out.println("You guessed " + guess + " times.");
         //         break;
         //         }
-        // else
+        //  else
         //     {
         //     System.out.println("Guess my name (type stop to exit)");
         //     }
-        // }
+        //  }
 
 
 
@@ -276,11 +282,11 @@ public class Basics {
         //          ARRAYS
         //  *************************
 
-        // Generating and storing 7 different random numbers into an array.
-        // int[] rolls = new int[7];                                           // Creates an array that can hold 7 integers.
-        // Random numbers = new Random();                                      // Initializes the random number generator.
+        //  Generating and storing 7 different random numbers into an array.
+        //  int[] rolls = new int[7];                                           // Creates an array that can hold 7 integers.
+        //  Random numbers = new Random();                                      // Initializes the random number generator.
         
-        // for(int current = 0 ; current < rolls.length ; current++)           // Loops through each position in the array (from index 0 to 6).
+        //  for(int current = 0 ; current < rolls.length ; current++)           // Loops through each position in the array (from index 0 to 6).
         //     {
         //     boolean isUnique;                                               // Boolean flag to track whether the generated number is unique.
         //     do {                                                            // Start of the loop that generates a new number and checks its uniqueness.
@@ -302,7 +308,7 @@ public class Basics {
         //             }
         //         } while (!isUnique);                                        // Repeat the process until a unique number is generated.
         //     }
-        // for (int current = 0 ; current < rolls.length ; current++)          // Loop to print all the values in the 'rolls' array.
+        //  for (int current = 0 ; current < rolls.length ; current++)          // Loop to print all the values in the 'rolls' array.
         //     {
         //         System.out.println(rolls[current]);                         // Prints each value in the array one by one.
         //     }
@@ -311,14 +317,14 @@ public class Basics {
 
 
         //  Generating random numbers and storing to array, also handling the summing of the numbers.
-        // for (int i = 0 ; i < (rolls.length) ; i++)
+        //  for (int i = 0 ; i < (rolls.length) ; i++)
         //     {
         //     rolls[i] = number.nextInt(6) +1;
         //     sum += rolls[i];
         //     }
         
         //     //Printing the rolls    
-        // for (int i = 0 ; i < rolls.length ; i++)
+        //  for (int i = 0 ; i < rolls.length ; i++)
         //     {
         //         System.out.println(rolls[i]);
         //     }
@@ -330,7 +336,104 @@ public class Basics {
         //     Arrays.sort(rolls);
         //     System.out.println("The highest roll is " + rolls[rolls.length - 1]);
 
-    }   // End of main
+
+
+        //  *************************
+        //     2 DIMENSIONAL ARRAY
+        //  *************************
+
+
+        //  *************************
+        //          NOTICE
+        //  *************************
+        //  This example contains methods, thats why it has "End of main" comment in it.
+        
+        //         Scanner in = new Scanner(System.in);
+        //         String[][] grid = new String[5][5];     //Make a grid that is 5 by 5
+
+        //         //  Fill the grid with "O"s
+        //         for (int i = 0 ; i < 5 ; i++)
+        //             {
+        //             for (int j = 0 ; j < 5 ; j++)
+        //                 {
+        //                     grid[i][j] = "O";
+        //                 }
+        //             }
+        
+        //         // Loop it until user inputs "0"
+        //         while(true)
+        //         {
+        //         System.out.println("Current Grid");
+        //         // Calls for the printGrid method
+        //         printGrid(grid);
+
+        //         System.out.println("Enter a row (1-5):");
+        //         int row = in.nextInt();
+        //         if (row == 0)
+        //             {
+        //                 System.out.println("Game Over!");
+        //                 break;
+        //             }
+
+        //         System.out.println("Enter a column (1-5)");
+        //         int column = in.nextInt();
+        //         if (column == 0)
+        //             {
+        //                 System.out.println("Game Over!");
+        //                 break; 
+        //             }
+        
+        //         // Adjust the user input so it works with indexing "so user types 1 and it reads it as index 0"
+        //         row -= 1;
+        //         column -=1;
+        
+        //         // Calls for the shoot method
+        //         shoot(row, column, grid);
+
+        //         System.out.println("Current Grid");
+        //         printGrid(grid);
+        //         }
+        //         in.close();
+        //     }    // End of main
+
+        //     // Method to print the current state of the grid.
+        //     public static void printGrid(String[][] grid)
+        //     {
+        //         System.out.print("  ");
+        //         for (int j = 0 ; j < 5 ; j++)
+        //             {
+        //             System.out.print((j + 1) + " ");
+        //             }
+        //             System.out.println();
+
+
+        //         for (int i = 0 ; i < 5 ; i++)
+        //             {
+        //             System.out.print((i + 1) + " ");
+        //             for (int j = 0 ; j < 5 ; j++)
+        //                 {
+        //                 System.out.print(grid[i][j] + " ");
+        //                 }
+        //                 System.out.println(); // Move to the next row 
+        //             }
+        //     } // End of grid method
+
+        //     // Method to handle the shooting logic.
+        //     public static void shoot(int row, int column, String[][] grid)
+        //     {
+        //         if (row >= 0 && row < 5 && column >= 0 && column < 5)
+        //             {
+        //                 grid[row][column] = "X";    // Mark the shot position with "X"
+        //                 System.out.println("You shot at (" + row + ", " + column + ")");
+        //             }
+        //         else
+        //             {
+        //                 System.out.println("Invalid coordinates!");
+        //             }
+        //     } // End of shoot method
+        //  }
+
+    }   // End of main for this whole app.
 
 
         //  *************************
