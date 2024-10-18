@@ -208,10 +208,129 @@ public class Basics {
         //      } while (numberOK == false);
 
         //  System.out.println("You wrote " + number);
+
+
+
+
+        //  *************************
+        //          LOOPS
+        //  *************************
+
+
+        // This loops example is about how to print stars, by addind 1 more for each row. 
+        // Scanner in = new Scanner(System.in);
+
+        // System.out.println("How many rows?");
+        // int rows = in.nextInt();
+
+        // for (int i = 1; i <= rows; i++)                             //How many rows are printed
+        //     {   
+        //                                                                  //for (int space = 1; space <= (rows - i); space++)   //How many spaces there are before printing a * and removing a space each row printed 
+        //                                                                  //{
+        //   When these 4 lines are added the stars will be reversed        //System.out.print(" ");
+        //                                                                  //}
+        //         for (int stars = 1; stars <= i; stars++)            //How many stars are printed, and added for each row
+        //         {
+        //         System.out.print("*");                              //Using just print so there is no line change
+        //         }                        
+        //         System.out.println();                               //Doing a line change after desired amount of stars are printed.
+        //     }
+        
+        
+
+
+        // This example is for guessing a name
+        // Scanner in = new Scanner(System.in);
+        // String name = "";
+        // String correct = "Pekka";
+        // int guess = 0;
+        // System.out.println("Guess my name (type stop to exit)");
+            
+        // while(true)
+        // {
+        //     name = in.nextLine();
+        //     guess++;
+        
+        // if (name.equalsIgnoreCase(correct))
+        //         {
+        //         System.out.println("Congratulations!");
+        //         System.out.println("You guessed " + guess + " times.");
+        //         break;
+        //         }
+        // else if (name.equalsIgnoreCase("stop"))    
+        //         {
+        //         guess--;
+        //         System.out.println("You guessed " + guess + " times.");
+        //         break;
+        //         }
+        // else
+        //     {
+        //     System.out.println("Guess my name (type stop to exit)");
+        //     }
+        // }
+
+
+
+
+        //  *************************
+        //          ARRAYS
+        //  *************************
+
+        // Generating and storing 7 different random numbers into an array.
+        // int[] rolls = new int[7];                                           // Creates an array that can hold 7 integers.
+        // Random numbers = new Random();                                      // Initializes the random number generator.
+        
+        // for(int current = 0 ; current < rolls.length ; current++)           // Loops through each position in the array (from index 0 to 6).
+        //     {
+        //     boolean isUnique;                                               // Boolean flag to track whether the generated number is unique.
+        //     do {                                                            // Start of the loop that generates a new number and checks its uniqueness.
+        //         int newNumber = numbers.nextInt(35) +1;                     // Generates a random number between 1 and 35 (nextInt(35) returns a number from 0-34, adding 1 shifts the range to 1-35).
+        //         isUnique = true;                                            // Assumes the number is unique initially. 
+
+        //         for (int previous = 0 ; previous < current ; previous++)    // Loop to check if the new number already exists in the array (up to the current index).
+        //             {
+        //                 if (rolls[previous] == newNumber)                   // If the new number matches any number already in the array...
+        //                 {
+        //                 isUnique = false;                                   // ...set the flag to false and break the loop.
+        //                 break;
+        //                 }
+        //             }
+
+        //         if (isUnique)                                               // If no match was found (i.e., the number is unique)...
+        //             {
+        //             rolls[current] = newNumber;                             // ...store the number in the current position of the array.
+        //             }
+        //         } while (!isUnique);                                        // Repeat the process until a unique number is generated.
+        //     }
+        // for (int current = 0 ; current < rolls.length ; current++)          // Loop to print all the values in the 'rolls' array.
+        //     {
+        //         System.out.println(rolls[current]);                         // Prints each value in the array one by one.
+        //     }
+
+
+
+
+        //  Generating random numbers and storing to array, also handling the summing of the numbers.
+        // for (int i = 0 ; i < (rolls.length) ; i++)
+        //     {
+        //     rolls[i] = number.nextInt(6) +1;
+        //     sum += rolls[i];
+        //     }
+        
+        //     //Printing the rolls    
+        // for (int i = 0 ; i < rolls.length ; i++)
+        //     {
+        //         System.out.println(rolls[i]);
+        //     }
+        
+        //     //Displaying the sum of the rolls
+        //     System.out.println("The sum of rolls is " + sum);
+
+        //     //Sorting the array from lowest to highest, and pulling the last array which has the highest numnber.
+        //     Arrays.sort(rolls);
+        //     System.out.println("The highest roll is " + rolls[rolls.length - 1]);
+
     }   // End of main
-
-    
-
 
 
         //  *************************
