@@ -2,6 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Collections;
 public class Basics {
     public static void main(String[] args) throws Exception {   //Start of main
         
@@ -69,6 +70,39 @@ public class Basics {
         //  input = in.nextDouble();                                                // When giving an input that isn't a whole number, use "." instead of ","
 
         //  System.out.println(input + 4.5);
+
+        // CODE RUNNER EXAMPLES
+
+        // User input, how to check if input is empty.
+
+        // Scanner in = new Scanner(System.in);
+        // String name = "";
+        // System.out.println("What is your name?");
+        // name = in.nextLine();
+
+        // if (name.equals(""))
+        // {
+        //     System.out.println("Error");
+        // }
+        // else
+        // {
+        //     System.out.println("Your name is " + name + ".");
+        // }
+
+
+
+        // User input, how to use parseInt.
+
+        // Scanner in = new Scanner(System.in);
+        // String name = "";
+        // int age = 0;
+
+        // System.out.println("What is your name?");
+        // name = in.nextLine();
+        // System.out.println("How old are you?");
+        // age = Integer.parseInt(in.nextLine());
+
+        // System.out.println("Your name is " + name + " and you are " + age + " years old.");
 
         //  *************************
         //          NOTICE
@@ -185,6 +219,50 @@ public class Basics {
 
 
 
+        // CODE RUNNER EXAMPLES
+        // Modifying Arraylist. import java.util.Collections;
+
+        
+        // ArrayList<String> cars = new ArrayList<String>();
+        // cars.add("Kia");
+        // cars.add("Tesla");
+        // cars.add("BMW");
+        // cars.add("Renault");
+
+        // for (String car : cars)
+        // {
+        // System.out.println(car);
+        // }
+
+        // cars.add(1, "Ford");
+        // cars.remove("Tesla");
+
+        // for (int i = 0; i < cars.size(); i++) 
+        // {
+        //     if (cars.get(i).equals("BMW"))
+        //         {
+        //         cars.set(i, "Audi");
+        //         break;
+        //         }
+        // }
+
+        // System.out.println("MODIFIED LIST");
+        // for(String car : cars)
+        // {
+        //     System.out.println(car);
+        // }
+
+        // Collections.sort(cars);
+
+        // System.out.println("SORTED LIST");
+        // for (String car : cars)
+        //     {
+        //         System.out.println(car);
+        //     }
+
+
+
+
         //  *************************
         //       ERROR HANDLING
         //  *************************
@@ -276,6 +354,85 @@ public class Basics {
         //  }
 
 
+        // CODE RUNNER EXAMPLES
+
+        // Loops basics, how to do while loop with increasing number.
+
+        // int num = 0;
+        
+        // while (num < 5)
+        //     {
+        //         System.out.println(num + 1);
+        //         num++;
+        //     }
+        // }
+        // }
+
+        // Loops basics, how to print desired amount of stars.
+
+        // int i = 0;
+        
+        // while (i < 10)
+        // {
+        // System.out.print("*");
+        // i++;
+        // }
+
+
+        // int round = 0;
+
+        // while(round < 10)
+        // {
+        //     System.out.println("Round " + (round + 1));
+        //     round++;
+        // }
+
+
+        // Loops advanced, asking first and the last number for a loop.
+
+        // Scanner in = new Scanner(System.in);
+        // int first = 0;
+        // int last = 0;
+
+        // System.out.println("First number?");
+        // first = Integer.parseInt(in.nextLine());
+        // System.out.println("Last number?");
+        // last = Integer.parseInt(in.nextLine());
+
+        // for (int i = first ; i <= last ; i++)
+        //     {
+        //         System.out.println(i);
+        //     }
+
+
+        // Guessing game.
+
+        // Scanner in = new Scanner(System.in);
+        // String guess = "";
+        // int tries = 0;
+        // String correct = "Emma";
+
+        // while (guess != correct) 
+        // {
+        // System.out.println("Guess my name (type stop to exit)");
+        // guess = in.nextLine();
+        // tries++;
+
+        // if(guess.equalsIgnoreCase("stop"))
+        //     {
+        //     tries--;
+        //     System.out.println("You guessed " + tries + " times.");
+        //     break;
+        //     }
+
+        // if (guess.equals(correct))
+        //     {
+        //         System.out.println("Congratulations!");
+        //         System.out.println("You guessed " + tries + " times.");
+        //         break;
+        //     }
+        // }
+
 
 
         //  *************************
@@ -335,6 +492,64 @@ public class Basics {
         //     //Sorting the array from lowest to highest, and pulling the last array which has the highest numnber.
         //     Arrays.sort(rolls);
         //     System.out.println("The highest roll is " + rolls[rolls.length - 1]);
+
+        
+        
+        // CODE RUNNER EXAMPLES
+        // Arrays basics, looping the array.
+        // String[] colours = new String[3];
+        // colours[0] = "Green";
+        // colours[1] = "Blue";
+        // colours[2] = "Yellow";
+
+        // System.out.println(colours[1]);
+
+        // for (int i = 0 ; i < colours.length ; i++)
+        //     {        
+        //     System.out.println((i + 1) + "." + " " + colours[i]);
+        //     }
+        // }
+        // }
+
+        // Searching for an item in array.
+        // String[] furniture = {"Table", "Sofa", "Shelf", "Painting"};
+
+        // for (int i = 0 ; i < furniture.length ; i++)
+        //     {
+        //     if(furniture[i].equals("Sofa"))
+        //         {
+        //         System.out.println("Sofa found");
+        //         }
+        //     }
+
+
+        // Added the array numbers together to print sum.
+
+        // int[] number = new int[3];
+        // number[0] = 3;
+        // number[1] = 6;
+        // number[2] = 1;
+
+        // int sum = 0;
+
+        // for(int i = 0 ; i < number.length ; i++)
+        // {
+        // sum += number[i];
+        // }
+        // System.out.println(sum);
+
+        // Sorting the array and printing the lowest value-
+
+        // int[] numbers = new int[5];
+        // numbers[0] = 16;
+        // numbers[1] = 18;
+        // numbers[2] = 5;
+        // numbers[3] = 3;
+        // numbers[4] = 10;
+
+        // Arrays.sort(numbers);
+
+        // System.out.println(numbers[0]);
 
 
 
